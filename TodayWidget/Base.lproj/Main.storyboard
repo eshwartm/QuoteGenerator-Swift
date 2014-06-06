@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TodayWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JHE-j9-wgi">
+                                <rect key="frame" x="0.0" y="138" width="480" height="193"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="y49-3A-4bm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ily-9J-UKL"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="480" translatesAutoresizingMaskIntoConstraints="NO" id="DKQ-Vb-EZy">
+                                <rect key="frame" x="0.0" y="7" width="480" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Rsd-J9-h3c"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DKQ-Vb-EZy" firstAttribute="leading" secondItem="JHE-j9-wgi" secondAttribute="leading" id="BwT-yx-96P"/>
+                            <constraint firstItem="DKQ-Vb-EZy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="7" id="Fce-Hp-8fo"/>
+                            <constraint firstAttribute="trailing" secondItem="DKQ-Vb-EZy" secondAttribute="trailing" id="I3v-2l-1t3"/>
+                            <constraint firstItem="DKQ-Vb-EZy" firstAttribute="trailing" secondItem="JHE-j9-wgi" secondAttribute="trailing" id="iAG-jS-5cG"/>
+                            <constraint firstItem="DKQ-Vb-EZy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y7u-L3-ZeI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JHE-j9-wgi" secondAttribute="bottom" constant="149" id="yY1-uw-3If"/>
+                            <constraint firstItem="JHE-j9-wgi" firstAttribute="top" secondItem="DKQ-Vb-EZy" secondAttribute="bottom" constant="11" id="za5-1E-pww"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="DKQ-Vb-EZy" id="ZWk-ia-jgW"/>
+                        <outlet property="tblView" destination="JHE-j9-wgi" id="dar-Et-Bh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105" y="289"/>
+        </scene>
+    </scenes>
+</document>
