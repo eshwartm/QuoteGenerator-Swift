@@ -12,6 +12,10 @@
 		70BBC7A7193EECB200AB9C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70BBC7A5193EECB200AB9C37 /* Main.storyboard */; };
 		70BBC7A9193EECB200AB9C37 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BBC7A8193EECB200AB9C37 /* Images.xcassets */; };
 		70BBC7B5193EECB200AB9C37 /* TodayWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBC7B4193EECB200AB9C37 /* TodayWidgetTests.swift */; };
+		70F75E7D194EBC9800AA9FCC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BBC7CA193EEF8400AB9C37 /* NotificationCenter.framework */; };
+		70F75E82194EBC9800AA9FCC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F75E81194EBC9800AA9FCC /* TodayViewController.swift */; };
+		70F75E84194EBC9800AA9FCC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F75E83194EBC9800AA9FCC /* MainInterface.storyboard */; };
+		70F75E87194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70F75E7C194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,20 @@
 			remoteGlobalIDString = 70BBC79B193EECB200AB9C37;
 			remoteInfo = TodayWidget;
 		};
+		70F75E85194EBC9800AA9FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BBC794193EECB200AB9C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70F75E7B194EBC9800AA9FCC;
+			remoteInfo = Quote;
+		};
+		70F75E88194EBC9800AA9FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BBC794193EECB200AB9C37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70F75E7B194EBC9800AA9FCC;
+			remoteInfo = Quote;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +70,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				70F75E87194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +90,10 @@
 		70BBC7B4193EECB200AB9C37 /* TodayWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWidgetTests.swift; sourceTree = "<group>"; };
 		70BBC7CA193EEF8400AB9C37 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		70BBC85F193F679C00AB9C37 /* ProjectPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = ProjectPlayground.playground; path = ../ProjectPlayground.playground; sourceTree = "<group>"; };
+		70F75E7C194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = metarain.TodayWidget.Quote.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F75E80194EBC9800AA9FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F75E81194EBC9800AA9FCC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		70F75E83194EBC9800AA9FCC /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +111,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F75E79194EBC9800AA9FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F75E7D194EBC9800AA9FCC /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +127,7 @@
 			children = (
 				70BBC79E193EECB200AB9C37 /* TodayWidget */,
 				70BBC7B1193EECB200AB9C37 /* TodayWidgetTests */,
+				70F75E7E194EBC9800AA9FCC /* Quote */,
 				70BBC7C9193EEF8400AB9C37 /* Frameworks */,
 				70BBC79D193EECB200AB9C37 /* Products */,
 			);
@@ -106,6 +138,7 @@
 			children = (
 				70BBC79C193EECB200AB9C37 /* TodayWidget.app */,
 				70BBC7AE193EECB200AB9C37 /* TodayWidgetTests.xctest */,
+				70F75E7C194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +190,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		70F75E7E194EBC9800AA9FCC /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				70F75E81194EBC9800AA9FCC /* TodayViewController.swift */,
+				70F75E83194EBC9800AA9FCC /* MainInterface.storyboard */,
+				70F75E7F194EBC9800AA9FCC /* Supporting Files */,
+			);
+			path = Quote;
+			sourceTree = "<group>";
+		};
+		70F75E7F194EBC9800AA9FCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70F75E80194EBC9800AA9FCC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +223,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				70F75E86194EBC9800AA9FCC /* PBXTargetDependency */,
+				70F75E89194EBC9800AA9FCC /* PBXTargetDependency */,
 			);
 			name = TodayWidget;
 			productName = TodayWidget;
@@ -199,6 +252,23 @@
 			productReference = 70BBC7AE193EECB200AB9C37 /* TodayWidgetTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		70F75E7B194EBC9800AA9FCC /* Quote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70F75E8A194EBC9800AA9FCC /* Build configuration list for PBXNativeTarget "Quote" */;
+			buildPhases = (
+				70F75E78194EBC9800AA9FCC /* Sources */,
+				70F75E79194EBC9800AA9FCC /* Frameworks */,
+				70F75E7A194EBC9800AA9FCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quote;
+			productName = Quote;
+			productReference = 70F75E7C194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +284,9 @@
 					70BBC7AD193EECB200AB9C37 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 70BBC79B193EECB200AB9C37;
+					};
+					70F75E7B194EBC9800AA9FCC = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -232,6 +305,7 @@
 			targets = (
 				70BBC79B193EECB200AB9C37 /* TodayWidget */,
 				70BBC7AD193EECB200AB9C37 /* TodayWidgetTests */,
+				70F75E7B194EBC9800AA9FCC /* Quote */,
 			);
 		};
 /* End PBXProject section */
@@ -253,6 +327,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70F75E7A194EBC9800AA9FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F75E84194EBC9800AA9FCC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,6 +352,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				70BBC7B5193EECB200AB9C37 /* TodayWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70F75E78194EBC9800AA9FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F75E82194EBC9800AA9FCC /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +385,16 @@
 			isa = PBXTargetDependency;
 			target = 70BBC79B193EECB200AB9C37 /* TodayWidget */;
 			targetProxy = 70BBC7C2193EEF3500AB9C37 /* PBXContainerItemProxy */;
+		};
+		70F75E86194EBC9800AA9FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70F75E7B194EBC9800AA9FCC /* Quote */;
+			targetProxy = 70F75E85194EBC9800AA9FCC /* PBXContainerItemProxy */;
+		};
+		70F75E89194EBC9800AA9FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70F75E7B194EBC9800AA9FCC /* Quote */;
+			targetProxy = 70F75E88194EBC9800AA9FCC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -452,6 +552,34 @@
 			};
 			name = Release;
 		};
+		70F75E8B194EBC9800AA9FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Quote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "metarain.TodayWidget.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		70F75E8C194EBC9800AA9FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Quote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "metarain.TodayWidget.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,6 +609,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		70F75E8A194EBC9800AA9FCC /* Build configuration list for PBXNativeTarget "Quote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F75E8B194EBC9800AA9FCC /* Debug */,
+				70F75E8C194EBC9800AA9FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
