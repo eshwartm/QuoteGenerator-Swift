@@ -16,6 +16,9 @@
 		70F75E82194EBC9800AA9FCC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F75E81194EBC9800AA9FCC /* TodayViewController.swift */; };
 		70F75E84194EBC9800AA9FCC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F75E83194EBC9800AA9FCC /* MainInterface.storyboard */; };
 		70F75E87194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 70F75E7C194EBC9800AA9FCC /* metarain.TodayWidget.Quote.appex */; };
+		70F75E90194EC22000AA9FCC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F75E81194EBC9800AA9FCC /* TodayViewController.swift */; };
+		70F75E91194EC22400AA9FCC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70F75E83194EBC9800AA9FCC /* MainInterface.storyboard */; };
+		70F75E94194EC3AB00AA9FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBC7A3193EECB200AB9C37 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70BBC7A7193EECB200AB9C37 /* Main.storyboard in Resources */,
+				70F75E91194EC22400AA9FCC /* MainInterface.storyboard in Resources */,
 				70BBC7A9193EECB200AB9C37 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +348,7 @@
 			files = (
 				70BBC7A4193EECB200AB9C37 /* ViewController.swift in Sources */,
 				70BBC7A2193EECB200AB9C37 /* AppDelegate.swift in Sources */,
+				70F75E90194EC22000AA9FCC /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70F75E94194EC3AB00AA9FCC /* ViewController.swift in Sources */,
 				70F75E82194EBC9800AA9FCC /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +623,7 @@
 				70F75E8C194EBC9800AA9FCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -37,11 +37,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var url = NSURL(string:QUERY_URL)
         var urlRequest = NSURLRequest(URL:url)
         
-//        var eff :UIVisualEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
-//        var someView = UIVisualEffectView(effect: eff)
-//        someView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
-//        self.view.addSubview(someView)
-        
         self.tblView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         self.tblView.hidden = true;
         
@@ -53,8 +48,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     println("Error fetching data : \(error)")
                 }
                 else {
-                    dict = self.parseJSON(data!)
-                    self.strQuote = dict!["quote"] as? NSString
+                    if let d = data  {
+                        dict = self.parseJSON(d)
+                    }
+                    // member subscript
+                    if let quote:String = dict!["quote"] as? String  {
+                        self.strQuote = quote
+                    }
                     println(self.strQuote)
                     self.displayLabel.text = self.strQuote
                 }
